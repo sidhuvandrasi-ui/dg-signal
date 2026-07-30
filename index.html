@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<title>DG SIGNAL | Premium App</title>
+<title>DG SIGNAL - AI Premium App</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,22 +15,42 @@ box-sizing:border-box;
 body{
 margin:0;
 font-family:Arial,sans-serif;
-background:#050505;
+background:#020202;
 color:white;
 text-align:center;
+overflow-x:hidden;
 }
+
+
+body:before{
+content:"";
+position:fixed;
+width:300px;
+height:300px;
+background:#00ff88;
+filter:blur(150px);
+opacity:.25;
+top:-100px;
+left:-100px;
+z-index:-1;
+}
+
 
 .container{
 padding:25px;
 }
 
+
 .logo{
-font-size:50px;
+font-size:55px;
 font-weight:900;
-letter-spacing:5px;
-color:#00ff99;
-text-shadow:0 0 25px #00ff99;
+letter-spacing:6px;
+color:#00ff88;
+text-shadow:
+0 0 10px #00ff88,
+0 0 30px #00ff88;
 }
+
 
 .tag{
 margin-top:10px;
@@ -41,11 +61,11 @@ font-size:18px;
 
 .btn{
 display:block;
+max-width:320px;
 margin:25px auto;
-max-width:300px;
-padding:17px;
+padding:18px;
 border-radius:50px;
-font-size:18px;
+font-size:19px;
 font-weight:bold;
 text-decoration:none;
 }
@@ -54,74 +74,94 @@ text-decoration:none;
 .red{
 background:#ff1744;
 color:white;
-box-shadow:0 0 30px #ff1744;
+box-shadow:0 0 35px #ff1744;
 }
 
 
 .green{
-background:#00ff99;
+background:#00ff88;
 color:#000;
-box-shadow:0 0 30px #00ff99;
+box-shadow:0 0 35px #00ff88;
 }
 
 
-.circle{
-width:280px;
-height:280px;
+
+.phone{
+width:260px;
+height:520px;
 margin:40px auto;
-border-radius:50%;
-background:radial-gradient(circle,#00ff99,#001a12);
+background:#050505;
+border:5px solid #222;
+border-radius:45px;
+padding:15px;
+box-shadow:
+0 0 40px #00ff88;
+}
+
+
+.screen{
+height:100%;
+border-radius:35px;
+background:
+linear-gradient(160deg,#111,#000);
 display:flex;
 align-items:center;
 justify-content:center;
-box-shadow:0 0 60px #00ff99;
 }
 
 
 .app{
-font-size:38px;
+font-size:40px;
 font-weight:900;
+color:#00ff88;
+text-shadow:0 0 20px #00ff88;
 }
+
 
 
 .card{
 max-width:380px;
 margin:auto;
-background:#111;
 padding:25px;
+background:rgba(255,255,255,.06);
 border-radius:30px;
-border:1px solid #222;
+border:1px solid rgba(0,255,136,.3);
+backdrop-filter:blur(15px);
 }
 
 
 .title{
-font-size:26px;
+font-size:28px;
 font-weight:bold;
 }
 
 
-.text{
+.desc{
 color:#aaa;
+line-height:1.5;
 margin:15px;
+}
+
+
+
+.box{
+background:#080808;
+border-radius:20px;
+padding:18px;
+margin:12px;
+border:1px solid #222;
 }
 
 
 .badge{
 display:inline-block;
 padding:8px 15px;
-margin:5px;
 border-radius:20px;
-border:1px solid #00ff99;
-color:#00ff99;
+color:#00ff88;
+border:1px solid #00ff88;
+margin:5px;
 }
 
-
-.feature{
-background:#080808;
-padding:15px;
-margin:12px;
-border-radius:15px;
-}
 
 
 .footer{
@@ -136,6 +176,7 @@ color:#666;
 
 <body>
 
+
 <div class="container">
 
 
@@ -145,11 +186,12 @@ DG SIGNAL
 
 
 <div class="tag">
-Premium Signal Experience
+AI Powered Premium Signal Experience
 </div>
 
 
-<!-- TOP RED BUTTON -->
+
+<!-- TOP BUTTON -->
 
 <a class="btn red" href="#">
 DOWNLOAD APK
@@ -157,11 +199,15 @@ DOWNLOAD APK
 
 
 
-<div class="circle">
+<div class="phone">
+
+<div class="screen">
 
 <div class="app">
 DG<br>
 SIGNAL
+</div>
+
 </div>
 
 </div>
@@ -172,38 +218,38 @@ SIGNAL
 
 
 <div class="title">
-Premium App
+Premium Access
 </div>
 
 
-<div class="text">
-Next generation smart experience with modern design.
+<div class="desc">
+Experience next generation smart technology with a modern interface.
 </div>
 
 
-<span class="badge">PREMIUM</span>
+<span class="badge">AI POWERED</span>
 <span class="badge">FAST</span>
-<span class="badge">SMART</span>
+<span class="badge">SECURE</span>
 
 
 
-<div class="feature">
-⚡ Instant Access
+<div class="box">
+⚡ Instant Signal System
 </div>
 
 
-<div class="feature">
-🚀 Modern Design
+<div class="box">
+🚀 Modern Dashboard
 </div>
 
 
-<div class="feature">
-💎 Premium Quality
+<div class="box">
+💎 Premium Experience
 </div>
 
 
 
-<!-- BOTTOM GREEN BUTTON -->
+<!-- BOTTOM BUTTON -->
 
 <a class="btn green" href="#">
 DOWNLOAD APK
@@ -220,6 +266,7 @@ DOWNLOAD APK
 
 
 </div>
+
 
 </body>
 </html>
